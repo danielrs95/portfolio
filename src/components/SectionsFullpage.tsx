@@ -1,5 +1,6 @@
 import ReactFullpage from "@fullpage/react-fullpage";
 import React from "react";
+import AboutSection from "./AboutSection";
 
 const SectionsFullpage = () => {
   return (
@@ -11,9 +12,7 @@ const SectionsFullpage = () => {
       render={() => {
         return (
           <ReactFullpage.Wrapper>
-            <div className="section">
-              <h3>Section 1</h3>
-            </div>
+            <AboutSection />
             <div className="section">
               <h3>Section 2</h3>
             </div>

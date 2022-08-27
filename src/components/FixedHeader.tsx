@@ -21,6 +21,7 @@ const FixedHeader: React.FC = () => (
   <Layout className={stylesFixedHeader.layout}>
     <Header className={stylesFixedHeader.header}>
       <Menu
+        // theme="dark"
         mode="horizontal"
         items={menuItems}
         className={stylesFixedHeader.menu}

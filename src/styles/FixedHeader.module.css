@@ -1,12 +1,13 @@
 .layout {
-  background-color: transparent !important;
+  background-color: white !important;
   height: 2rem;
   line-height: 2rem;
 }
 
 .header {
   width: 100%;
-  background-color: transparent !important;
+  z-index: 1;
+  background-color: white !important;
   display: flex;
   flex-direction: row;
   font-size: 1.5rem;
