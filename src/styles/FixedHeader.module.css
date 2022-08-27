@@ -1,0 +1,27 @@
+.layout {
+  background-color: transparent !important;
+  height: 2rem;
+  line-height: 2rem;
+}
+
+.header {
+  width: 100%;
+  background-color: transparent !important;
+  display: flex;
+  flex-direction: row;
+  font-size: 1.5rem;
+  height: inherit !important;
+  line-height: inherit !important;
+}
+
+.menu {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 0px !important;
+}
+
+.socialIcons {
+  align-self: center;
+  padding: 0 5px;
+}
