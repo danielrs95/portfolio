@@ -3,11 +3,13 @@ import React from "react";
 import AboutSection from "./AboutSection";
 
 const SectionsFullpage = () => {
+  const anchors = ["", "about", "work"];
+
   return (
     <ReactFullpage
-      // anchors={anchors}
+      anchors={anchors}
       navigation
-      // navigationTooltips={anchors}
+      navigationTooltips={anchors}
       // sectionsColor={["#282c34", "#ff5f45", "#0798ec"]}
       render={() => {
         return (

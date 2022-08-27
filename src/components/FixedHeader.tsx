@@ -3,7 +3,7 @@ import {
   GithubOutlined,
   HomeOutlined,
   LinkedinOutlined,
-  MailOutlined,
+  // MailOutlined,
 } from "@ant-design/icons";
 import { Layout, Menu } from "antd";
 import React from "react";
@@ -14,7 +14,7 @@ const { Header } = Layout;
 const menuItems = [
   { label: "About", key: "About", icon: <HomeOutlined /> },
   { label: "Work", key: "Work", icon: <CodeOutlined /> },
-  { label: "Contact", key: "Contact", icon: <MailOutlined /> },
+  // { label: "Contact", key: "Contact", icon: <MailOutlined /> },
 ];
 
 const FixedHeader: React.FC = () => (
@@ -25,6 +25,7 @@ const FixedHeader: React.FC = () => (
         mode="horizontal"
         items={menuItems}
         className={stylesFixedHeader.menu}
+        activeKey={undefined}
       />
       <LinkedinOutlined className={stylesFixedHeader.socialIcons} />
       <GithubOutlined className={stylesFixedHeader.socialIcons} />
