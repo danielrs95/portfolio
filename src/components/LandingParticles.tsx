@@ -2,7 +2,7 @@ import React, { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 
-const AboutParticles = () => {
+const LandingParticles = () => {
   const particlesInit = useCallback(async (engine: any) => {
     await loadFull(engine);
   }, []);
@@ -83,4 +83,4 @@ const AboutParticles = () => {
   );
 };
 
-export default AboutParticles;
+export default LandingParticles;

@@ -3,7 +3,7 @@ import {
   GithubOutlined,
   HomeOutlined,
   LinkedinOutlined,
-  // MailOutlined,
+  UserOutlined,
 } from "@ant-design/icons";
 import { Layout, Menu } from "antd";
 import React from "react";
@@ -11,22 +11,24 @@ import stylesFixedHeader from "../styles/FixedHeader.module.css";
 
 const { Header } = Layout;
 
-const menuItems = [
-  { label: "About", key: "About", icon: <HomeOutlined /> },
-  { label: "Work", key: "Work", icon: <CodeOutlined /> },
-  // { label: "Contact", key: "Contact", icon: <MailOutlined /> },
-];
-
 const FixedHeader: React.FC = () => (
   <Layout className={stylesFixedHeader.layout}>
     <Header className={stylesFixedHeader.header}>
       <Menu
-        // theme="dark"
         mode="horizontal"
-        items={menuItems}
         className={stylesFixedHeader.menu}
         activeKey={undefined}
-      />
+      >
+        <Menu.Item icon={<HomeOutlined />}>
+          <a href="#Home">Home</a>
+        </Menu.Item>
+        <Menu.Item icon={<UserOutlined />}>
+          <a href="#About">About</a>
+        </Menu.Item>
+        <Menu.Item icon={<CodeOutlined />}>
+          <a href="#Work">Work</a>
+        </Menu.Item>
+      </Menu>
       <LinkedinOutlined className={stylesFixedHeader.socialIcons} />
       <GithubOutlined className={stylesFixedHeader.socialIcons} />
     </Header>

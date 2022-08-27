@@ -1,20 +1,22 @@
 import ReactFullpage from "@fullpage/react-fullpage";
 import React from "react";
-import AboutSection from "./AboutSection";
+import LandingSection from "./LandingSection";
 
 const SectionsFullpage = () => {
-  const anchors = ["", "about", "work"];
+  const anchors = ["Home", "About", "Work"];
 
   return (
     <ReactFullpage
       anchors={anchors}
       navigation
       navigationTooltips={anchors}
+      menu="#myMenu"
+      slidesNavigation
       // sectionsColor={["#282c34", "#ff5f45", "#0798ec"]}
       render={() => {
         return (
           <ReactFullpage.Wrapper>
-            <AboutSection />
+            <LandingSection />
             <div className="section">
               <h3>Section 2</h3>
             </div>
