@@ -1,10 +1,10 @@
 import ReactFullpage from "@fullpage/react-fullpage";
 import React from "react";
-import AboutSection from "./AboutSection";
-import LandingSection from "./LandingSection";
-import WorkSection from "./WorkSection";
+import AboutSection from "./AboutPage";
+import HomePage from "./HomePage";
+import WorkSection from "../components/WorkSection";
 
-const SectionsFullpage = () => {
+const AppPages = () => {
   const anchors = ["Home", "About", "Work"];
 
   return (
@@ -17,7 +17,7 @@ const SectionsFullpage = () => {
       render={() => {
         return (
           <ReactFullpage.Wrapper>
-            <LandingSection />
+            <HomePage />
             <AboutSection />
             <WorkSection />
           </ReactFullpage.Wrapper>
@@ -27,4 +27,4 @@ const SectionsFullpage = () => {
   );
 };
 
-export default SectionsFullpage;
+export default AppPages;

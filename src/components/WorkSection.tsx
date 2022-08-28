@@ -1,6 +1,6 @@
 import { Card, Col, List, Row } from "antd";
 import React from "react";
-import stylesSections from "../styles/Sections.module.css";
+import stylesSections from "../styles/Home.module.css";
 
 const WorkSection = () => {
   const data = [

@@ -1,23 +1,8 @@
-.landing {
+.aboutBg {
   background-color: #005A8D;
 }
 
-.landingContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  z-index: 1;
-}
-
-.landingTitle {
-  font-size: 3.3rem;
-  color: aliceblue;
-  font-weight: 900;
-}
-
-.landingSubtitle {
+.aboutSubtitle {
   font-size: 2.2rem;
   color: aliceblue;
   font-weight: 600;

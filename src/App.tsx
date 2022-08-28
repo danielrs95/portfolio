@@ -1,13 +1,13 @@
 import React from "react";
 import FixedHeader from "./components/FixedHeader";
-import SectionsFullpage from "./components/SectionsFullpage";
+import AppPages from "./pages/AppPages";
 
 function App() {
   // const anchors = ["firstPage", "secondPage", "thirdPage"];
   return (
     <>
       <FixedHeader />
-      <SectionsFullpage />
+      <AppPages />
     </>
   );
 }
