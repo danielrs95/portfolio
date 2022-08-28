@@ -2,7 +2,7 @@ import ReactFullpage from "@fullpage/react-fullpage";
 import React from "react";
 import AboutSection from "./AboutPage";
 import HomePage from "./HomePage";
-import WorkSection from "../components/WorkSection";
+import WorkPage from "./WorkPage";
 
 const AppPages = () => {
   const anchors = ["Home", "About", "Work"];
@@ -19,7 +19,7 @@ const AppPages = () => {
           <ReactFullpage.Wrapper>
             <HomePage />
             <AboutSection />
-            <WorkSection />
+            <WorkPage />
           </ReactFullpage.Wrapper>
         );
       }}

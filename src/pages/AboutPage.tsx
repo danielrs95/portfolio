@@ -12,7 +12,7 @@ const AboutSection = () => {
             Hello! I am a web developer focused on Javascript with knowledge on
             Ruby. Currently living in Medellin, Colombia. Passionate about
             learning, programming and working out. I am curious about tech in
-            general, currently learning about Rust & Elixir
+            general, currently learning Rust & Elixir
           </p>
         </Col>
       </Row>
