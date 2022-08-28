@@ -9,13 +9,16 @@ import {
   UserOutlined,
 } from "@ant-design/icons";
 import { Layout, Menu } from "antd";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 // import stylesFixedHeader from "../styles/FixedHeader.module.css";
 
 const { Sider } = Layout;
 
 const FixedHeader: React.FC = () => {
+  const { hash } = useLocation();
   const [collapsed, setCollapsed] = useState(true);
+  const [current, setCurrent] = useState("");
   const collapseHandler = () => {
     setCollapsed(!collapsed);
   };
@@ -66,6 +69,11 @@ const FixedHeader: React.FC = () => {
     },
   ];
 
+  useEffect(() => {
+    const newCurrent = hash.slice(1);
+    setCurrent(newCurrent);
+  }, [hash]);
+
   return (
     <Sider
       trigger={null}
@@ -74,6 +82,7 @@ const FixedHeader: React.FC = () => {
       style={{ background: "white" }}
     >
       <Menu
+        selectedKeys={[current]}
         overflowedIndicator={<MenuOutlined />}
         items={menuItems}
         mode="inline"

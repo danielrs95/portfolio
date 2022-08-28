@@ -1,69 +1,46 @@
-import {
-  EditOutlined,
-  EllipsisOutlined,
-  SettingOutlined,
-} from "@ant-design/icons";
-import { Avatar, Card, Col, List, Row } from "antd";
-import Meta from "antd/lib/card/Meta";
 import React from "react";
+import { GithubOutlined, GlobalOutlined } from "@ant-design/icons";
+import { Card, Col, List, Row, Typography } from "antd";
+import Meta from "antd/lib/card/Meta";
 import stylesSections from "../styles/Home.module.css";
+import projectsData from "../utils/Work";
+
+const { Paragraph } = Typography;
 
 const WorkPage = () => {
-  const data = [
-    {
-      title: "Title 1",
-    },
-    {
-      title: "Title 2",
-    },
-    {
-      title: "Title 3",
-    },
-    {
-      title: "Title 4",
-    },
-    {
-      title: "Title 5",
-    },
-    {
-      title: "Title 6",
-    },
-  ];
   return (
-    <div className={`section ${stylesSections.landing}`}>
+    <div className={`section ${stylesSections.homeBackground}`}>
       <Row justify="center" align="middle">
-        <Col span={20}>
+        <Col span={15}>
           <List
             grid={{
-              // gutter: 16,
               xs: 1,
               lg: 2,
-              // xl: 6,
-              // xxl: 3,
             }}
-            dataSource={data}
+            dataSource={projectsData}
             style={{ marginTop: "2rem" }}
             renderItem={(item) => (
               <List.Item>
-                {/* <Card title={item.title}>Card content</Card> */}
                 <Card
-                  // style={{ width: 300 }}
-                  cover={
-                    <img
-                      alt="example"
-                      src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
-                    />
-                  }
+                  cover={<img alt={item.title} src={item.img} />}
                   actions={[
-                    <SettingOutlined key="setting" />,
-                    <EditOutlined key="edit" />,
-                    <EllipsisOutlined key="ellipsis" />,
+                    <GlobalOutlined key="web" />,
+                    <GithubOutlined
+                      key="github"
+                      onClick={() => window.open(item.repo)}
+                    />,
                   ]}
                 >
                   <Meta
-                    avatar={<Avatar src="https://joeschmoe.io/api/v1/random" />}
                     title={item.title}
-                    description="This is the description"
+                    description={
+                      <Paragraph
+                        type="secondary"
+                        ellipsis={{ rows: 2, expandable: true, symbol: "more" }}
+                      >
+                        {item.shortDescription}
+                      </Paragraph>
+                    }
                   />
                 </Card>
               </List.Item>

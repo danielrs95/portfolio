@@ -9,3 +9,7 @@ body {
 #fp-nav ul li a span {
   background: aliceblue;
 }
+
+.fp-watermark a {
+  display: none;
+}
