@@ -4,10 +4,10 @@ import LandingParticles from "./LandingParticles";
 
 const LandingSection = () => {
   return (
-    <div className={`section ${stylesSections.about}`}>
-      <div className={stylesSections.aboutContainer}>
-        <h1 className={stylesSections.aboutTitle}>Daniel Ramirez Salazar</h1>
-        <h2 className={stylesSections.aboutSubtitle}>Full Stack Developer</h2>
+    <div className={`section ${stylesSections.landing}`}>
+      <div className={stylesSections.landingContainer}>
+        <h1 className={stylesSections.landingTitle}>Daniel Ramirez Salazar</h1>
+        <h2 className={stylesSections.landingSubtitle}>Full Stack Developer</h2>
         <LandingParticles />
       </div>
     </div>
