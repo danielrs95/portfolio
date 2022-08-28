@@ -1,14 +1,20 @@
+import { Layout } from "antd";
+import { Content } from "antd/lib/layout/layout";
+import Sider from "antd/lib/layout/Sider";
 import React from "react";
 import FixedHeader from "./components/FixedHeader";
 import AppPages from "./pages/AppPages";
 
 function App() {
-  // const anchors = ["firstPage", "secondPage", "thirdPage"];
   return (
-    <>
+    <Layout>
       <FixedHeader />
-      <AppPages />
-    </>
+      <Layout>
+        <Content>
+          <AppPages />
+        </Content>
+      </Layout>
+    </Layout>
   );
 }
 
