@@ -5,3 +5,7 @@ html {
 body {
   font-family: Cascadia Code PL, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+#fp-nav ul li a span {
+  background: aliceblue;
+}
