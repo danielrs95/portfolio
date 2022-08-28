@@ -12,13 +12,13 @@
 }
 
 .landingTitle {
-  font-size: 4rem;
+  font-size: 3.3rem;
   color: aliceblue;
   font-weight: 900;
 }
 
 .landingSubtitle {
-  font-size: 3rem;
+  font-size: 2.2rem;
   color: aliceblue;
   font-weight: 600;
 }
@@ -26,7 +26,7 @@
 .aboutText {
   font-size: 1.25rem;
   color: aliceblue;
-  /* font-weight: 300; */
+  font-weight: 300;
 }
 
 .area{
