@@ -2,6 +2,7 @@ import im1 from "../img/togetheater.png";
 import im2 from "../img/mern_homeScreen.png";
 import im3 from "../img/single_page_ecommerce.png";
 import im4 from "../img/magicPolls.png";
+import im5 from "../img/notesNest.png";
 
 const data = [
   {
@@ -24,6 +25,13 @@ const data = [
       "E-Commerce application made with React, Redux, Node, Express & MondoDB",
     img: im2,
     repo: "https://github.com/danielrs95/MERN_ECOMMERCE",
+  },
+  {
+    title: "Notes",
+    description: `Minimalist web notes app made with Nest as the main backend framework and React as the main frontend framework.`,
+    shortDescription: "Minimalist web notes app made with Nest and React",
+    img: im5,
+    repo: "https://github.com/danielrs95/Notes_NestJS_React",
   },
   {
     title: "SPA E-Commerce",
