@@ -48,7 +48,7 @@ const LandingParticles = () => {
           },
           collisions: {
             enable: true,
-            mode: "bounce",
+            mode: "absorb",
           },
           move: {
             direction: "none",
@@ -71,7 +71,7 @@ const LandingParticles = () => {
             value: 0.3,
           },
           shape: {
-            type: ["circle", "triangle"],
+            type: ["circle"],
           },
           size: {
             value: { min: 1, max: 5 },

@@ -13,3 +13,9 @@ body {
 .fp-watermark a {
   display: none;
 }
+
+.ant-layout-sider-children {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

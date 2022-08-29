@@ -35,7 +35,7 @@ const WorkPage = () => {
                     />
                   }
                   actions={[
-                    <GlobalOutlined key="web" />,
+                    // <GlobalOutlined key="web" />,
                     <GithubOutlined
                       key="github"
                       onClick={() => window.open(item.repo)}
