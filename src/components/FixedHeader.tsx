@@ -8,12 +8,13 @@ import {
   MenuUnfoldOutlined,
   UserOutlined,
 } from "@ant-design/icons";
-import { Layout, Menu } from "antd";
+import { Grid, Layout, Menu } from "antd";
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 // import stylesFixedHeader from "../styles/FixedHeader.module.css";
 
 const { Sider } = Layout;
+const { useBreakpoint } = Grid;
 
 const FixedHeader: React.FC = () => {
   const { hash } = useLocation();
@@ -22,6 +23,10 @@ const FixedHeader: React.FC = () => {
   const collapseHandler = () => {
     setCollapsed(!collapsed);
   };
+
+  const screens = useBreakpoint();
+  const { lg } = screens;
+
   const menuItems = [
     { label: <a href="#Home">Home</a>, key: "Home", icon: <HomeOutlined /> },
     { label: <a href="#About">About</a>, key: "About", icon: <UserOutlined /> },
@@ -73,6 +78,10 @@ const FixedHeader: React.FC = () => {
     const newCurrent = hash.slice(1);
     setCurrent(newCurrent);
   }, [hash]);
+
+  useEffect(() => {
+    if (lg) setCollapsed(false);
+  }, [lg]);
 
   return (
     <Sider

@@ -16,6 +16,8 @@ const WorkPage = () => {
             grid={{
               xs: 1,
               lg: 2,
+              xl: 3,
+              xxl: 3,
               gutter: 16,
             }}
             dataSource={projectsData}
