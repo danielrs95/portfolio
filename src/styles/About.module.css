@@ -15,8 +15,8 @@
 }
 
 .area{
-  background: #005A8D;
-  background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
+  background: transparent;
+  /* background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8); */
   width: 100%;
   height:1vh;
 }
