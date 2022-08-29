@@ -16,13 +16,22 @@ const WorkPage = () => {
             grid={{
               xs: 1,
               lg: 2,
+              gutter: 16,
             }}
             dataSource={projectsData}
             style={{ marginTop: "2rem" }}
             renderItem={(item) => (
               <List.Item>
                 <Card
-                  cover={<img alt={item.title} src={item.img} />}
+                  cover={
+                    <img
+                      width={300}
+                      height={200}
+                      alt={item.title}
+                      src={item.img}
+                      style={{ objectFit: "contain" }}
+                    />
+                  }
                   actions={[
                     <GlobalOutlined key="web" />,
                     <GithubOutlined
