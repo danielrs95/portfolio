@@ -6,14 +6,6 @@ import im5 from "../img/notesNest.png";
 
 const data = [
   {
-    title: "Togetheater",
-    description: `Movies application made with React, Node, Express & MondoDB. This app fetch data from TMDB API, showing movies that are: Trending, Popular & Top Rated`,
-    shortDescription:
-      "Movies application made with React, Node, Express & MondoDB.",
-    img: im1,
-    repo: "https://github.com/danielrs95/togetheater",
-  },
-  {
     title: "E-Commerce",
     description: `eCommerce application made with React, Redux, Node, Express & MondoDB. Some of the build in functionality are:
 
@@ -25,6 +17,7 @@ const data = [
       "E-Commerce application made with React, Redux, Node, Express & MondoDB",
     img: im2,
     repo: "https://github.com/danielrs95/MERN_ECOMMERCE",
+    webProject: "https://merncommercedny.herokuapp.com/",
   },
   {
     title: "Notes",
@@ -32,6 +25,14 @@ const data = [
     shortDescription: "Minimalist web notes app made with Nest and React",
     img: im5,
     repo: "https://github.com/danielrs95/Notes_NestJS_React",
+  },
+  {
+    title: "Togetheater",
+    description: `Movies application made with React, Node, Express & MondoDB. This app fetch data from TMDB API, showing movies that are: Trending, Popular & Top Rated`,
+    shortDescription:
+      "Movies application made with React, Node, Express & MondoDB.",
+    img: im1,
+    repo: "https://github.com/danielrs95/togetheater",
   },
   {
     title: "SPA E-Commerce",
