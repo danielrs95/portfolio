@@ -99,7 +99,7 @@ const FixedHeader: React.FC = () => {
           alignItems: "center",
         }}
       >
-        <h1 style={{ fontSize: "1.8rem", textAlign: "center" }}>DR</h1>
+        <h1 style={{ fontSize: "1.8rem", textAlign: "center" }}>DnRz</h1>
         <Menu
           selectedKeys={[current]}
           overflowedIndicator={<MenuOutlined />}
