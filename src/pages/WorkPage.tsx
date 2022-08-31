@@ -35,7 +35,12 @@ const WorkPage = () => {
                     />
                   }
                   actions={[
-                    // <GlobalOutlined key="web" />,
+                    item.webProject && (
+                      <GlobalOutlined
+                        key="web"
+                        onClick={() => window.open(item.webProject)}
+                      />
+                    ),
                     <GithubOutlined
                       key="github"
                       onClick={() => window.open(item.repo)}

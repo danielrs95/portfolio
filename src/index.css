@@ -7,7 +7,7 @@ body {
 }
 
 #fp-nav ul li a span {
-  background: aliceblue;
+  background: aliceblue !important;
 }
 
 .fp-watermark a {
