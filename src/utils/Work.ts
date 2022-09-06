@@ -25,6 +25,7 @@ const data = [
     shortDescription: "Minimalist web notes app made with Nest and React",
     img: im5,
     repo: "https://github.com/danielrs95/Notes_NestJS_React",
+    webProject: "https://nest-note.herokuapp.com/",
   },
   {
     title: "Togetheater",
@@ -33,6 +34,7 @@ const data = [
       "Movies application made with React, Node, Express & MondoDB.",
     img: im1,
     repo: "https://github.com/danielrs95/togetheater",
+    webProject: "https://togetheater.herokuapp.com/",
   },
   {
     title: "SPA E-Commerce",
@@ -48,6 +50,7 @@ const data = [
     shortDescription: "Polls application made with Express & MongoDB",
     img: im4,
     repo: "https://github.com/danielrs95/Magic_Polls",
+    webProject: "https://magicpolls.herokuapp.com/",
   },
 ];
 
