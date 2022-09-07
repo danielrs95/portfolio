@@ -4,6 +4,7 @@ import { Card, Col, List, Row, Typography } from "antd";
 import Meta from "antd/lib/card/Meta";
 import stylesSections from "../styles/Home.module.css";
 import projectsData from "../utils/Work";
+import AboutStyles from "../styles/About.module.css";
 
 const { Paragraph } = Typography;
 
@@ -64,6 +65,20 @@ const WorkPage = () => {
           />
         </Col>
       </Row>
+      <div className={AboutStyles.area}>
+        <ul className={AboutStyles.circles}>
+          <li />
+          <li />
+          <li />
+          <li />
+          <li />
+          <li />
+          <li />
+          <li />
+          <li />
+          <li />
+        </ul>
+      </div>
     </div>
   );
 };
