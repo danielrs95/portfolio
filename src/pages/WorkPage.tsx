@@ -65,20 +65,6 @@ const WorkPage = () => {
           />
         </Col>
       </Row>
-      <div className={AboutStyles.area}>
-        <ul className={AboutStyles.circles}>
-          <li />
-          <li />
-          <li />
-          <li />
-          <li />
-          <li />
-          <li />
-          <li />
-          <li />
-          <li />
-        </ul>
-      </div>
     </div>
   );
 };
