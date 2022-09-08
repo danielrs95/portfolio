@@ -25,6 +25,14 @@ const AppPages = () => {
       }}
     />
   );
+
+  // return (
+  //   <>
+  //     <HomePage />
+  //     <AboutSection />
+  //     <WorkPage />
+  //   </>
+  // );
 };
 
 export default AppPages;

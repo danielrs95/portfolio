@@ -40,6 +40,7 @@ module.exports = {
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "@typescript-eslint/no-explicit-any": "off",
     "react/function-component-definition": "off",
+    "react/no-unescaped-entities": "off",
   },
   settings: {
     react: {

@@ -2,14 +2,14 @@ import React, { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 
-const LandingParticles = () => {
+const LandingParticles = (id: any) => {
   const particlesInit = useCallback(async (engine: any) => {
     await loadFull(engine);
   }, []);
 
   return (
     <Particles
-      id="tsparticles"
+      id={`tsparticles-${id}`}
       init={particlesInit}
       options={{
         fpsLimit: 120,
@@ -21,19 +21,28 @@ const LandingParticles = () => {
             },
             onHover: {
               enable: true,
-              mode: "repulse",
+              mode: "bubble",
             },
             resize: true,
           },
           modes: {
-            push: {
-              quantity: 4,
-            },
-            repulse: {
-              distance: 200,
-              duration: 0.4,
+            bubble: {
+              opacity: 0.8,
+              size: 15,
+              color: {
+                value: "#000",
+              },
             },
           },
+          // modes: {
+          //   push: {
+          //     quantity: 4,
+          //   },
+          //   repulse: {
+          //     distance: 200,
+          //     duration: 0.4,
+          //   },
+          // },
         },
         particles: {
           color: {
@@ -46,10 +55,10 @@ const LandingParticles = () => {
             opacity: 0.1,
             width: 2,
           },
-          collisions: {
-            enable: true,
-            mode: "absorb",
-          },
+          // collisions: {
+          //   enable: true,
+          //   mode: "absorb",
+          // },
           move: {
             direction: "none",
             enable: true,
@@ -57,7 +66,7 @@ const LandingParticles = () => {
               default: "bounce",
             },
             random: false,
-            speed: 3,
+            speed: 0.5,
             straight: false,
           },
           number: {
