@@ -9,10 +9,14 @@ const LandingParticles = (id: any) => {
 
   return (
     <Particles
-      id={`tsparticles-${id}`}
+      id="tsparticles-1"
       init={particlesInit}
       options={{
         fpsLimit: 120,
+        fullScreen: {
+          enable: true,
+          zIndex: 0,
+        },
         interactivity: {
           events: {
             onClick: {
@@ -34,15 +38,6 @@ const LandingParticles = (id: any) => {
               },
             },
           },
-          // modes: {
-          //   push: {
-          //     quantity: 4,
-          //   },
-          //   repulse: {
-          //     distance: 200,
-          //     duration: 0.4,
-          //   },
-          // },
         },
         particles: {
           color: {
@@ -55,10 +50,6 @@ const LandingParticles = (id: any) => {
             opacity: 0.1,
             width: 2,
           },
-          // collisions: {
-          //   enable: true,
-          //   mode: "absorb",
-          // },
           move: {
             direction: "none",
             enable: true,

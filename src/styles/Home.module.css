@@ -1,5 +1,6 @@
 .homeBackground {
   background-color: #005A8D;
+  height: 100vh;
 }
 
 .homeTitle {
@@ -20,6 +21,7 @@
   margin: 20px;
   font-size: 1.8rem;
   color: #fff !important;
+  z-index: 1 !important;
 }
 
 .waveEmoji {

@@ -1,7 +1,8 @@
 import { Col, Row } from "antd";
 import React from "react";
 import TypewriterComponent from "typewriter-effect";
-import { GithubOutlined, LinkedinOutlined } from "@ant-design/icons";
+import { GithubOutlined, LinkedinFilled } from "@ant-design/icons";
+import Particles from "react-particles";
 import HomeStyles from "../styles/Home.module.css";
 import LandingParticles from "../components/LandingParticles";
 
@@ -32,7 +33,7 @@ const HomePage = () => {
               strings: [
                 "Full Stack Developer",
                 "I like programming",
-                "I love learning and studying",
+                "I love learning",
               ],
               autoStart: true,
               loop: true,
@@ -42,7 +43,7 @@ const HomePage = () => {
             }}
           />
           <div>
-            <LinkedinOutlined
+            <LinkedinFilled
               className={HomeStyles.socialIcons}
               onClick={() =>
                 window.open(

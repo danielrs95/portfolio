@@ -9,11 +9,13 @@ const AppPages = () => {
 
   return (
     <ReactFullpage
+      licenseKey="gplv3-license"
       anchors={anchors}
       navigation
       navigationTooltips={anchors}
       menu="#myMenu"
       slidesNavigation
+      // autoScrolling={false}
       render={() => {
         return (
           <ReactFullpage.Wrapper>
