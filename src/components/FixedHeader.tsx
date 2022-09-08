@@ -90,20 +90,7 @@ const FixedHeader: React.FC = () => {
           items={menuItems}
           mode="inline"
         />
-        <div>
-          <LinkedinOutlined
-            className={stylesFixedHeader.socialIcons}
-            onClick={() =>
-              window.open(
-                "https://www.linkedin.com/in/dramirezs95/?locale=en_US"
-              )
-            }
-          />
-          <GithubOutlined
-            className={stylesFixedHeader.socialIcons}
-            onClick={() => window.open("https://github.com/danielrs95")}
-          />
-        </div>
+        <div />
       </div>
     </Sider>
   );

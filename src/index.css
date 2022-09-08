@@ -19,3 +19,7 @@ body {
   flex-direction: column;
   justify-content: center;
 }
+
+.Typewriter {
+  z-index: 1;
+}

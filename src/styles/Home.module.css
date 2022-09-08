@@ -6,12 +6,20 @@
   font-size: 2.8rem;
   color: aliceblue;
   font-weight: 900;
+  z-index: 1;
 }
 
 .homeSubtitle {
   font-size: 1.8rem;
   color: aliceblue;
   font-weight: 600;
+  z-index: 1;
+}
+
+.socialIcons {
+  margin: 20px;
+  font-size: 1.8rem;
+  color: #fff !important;
 }
 
 .waveEmoji {

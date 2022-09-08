@@ -1,5 +1,5 @@
 import React, { useCallback } from "react";
-import Particles from "react-tsparticles";
+import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 
 const LandingParticles = (id: any) => {
@@ -27,10 +27,10 @@ const LandingParticles = (id: any) => {
           },
           modes: {
             bubble: {
-              opacity: 0.8,
+              opacity: 0.2,
               size: 15,
               color: {
-                value: "#000",
+                value: "#261C15",
               },
             },
           },
@@ -77,13 +77,13 @@ const LandingParticles = (id: any) => {
             value: 50,
           },
           opacity: {
-            value: 0.3,
+            value: 0.25,
           },
           shape: {
             type: ["circle"],
           },
           size: {
-            value: { min: 1, max: 5 },
+            value: { min: 2, max: 5 },
           },
         },
         detectRetina: true,
