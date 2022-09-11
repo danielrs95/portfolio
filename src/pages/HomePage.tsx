@@ -1,12 +1,35 @@
-import { Col, Row } from "antd";
-import React from "react";
+import { Col, Row, Tooltip } from "antd";
+import React, { useEffect, useState } from "react";
 import TypewriterComponent from "typewriter-effect";
 import { GithubOutlined, LinkedinFilled } from "@ant-design/icons";
-import Particles from "react-particles";
 import HomeStyles from "../styles/Home.module.css";
 import LandingParticles from "../components/LandingParticles";
 
 const HomePage = () => {
+  const [strings, setStrings] = useState<string[]>([
+    "Full Stack Developer",
+    "Discipline beats talent",
+  ]);
+
+  useEffect(() => {
+    fetch("https://type.fit/api/quotes")
+      .then((response) => response.json())
+      .then((actualData) => {
+        setStrings((prevState) => [
+          ...prevState,
+          actualData[Math.floor(Math.random() * 100)].text,
+        ]);
+        setStrings((prevState) => [
+          ...prevState,
+          actualData[Math.floor(Math.random() * 100)].text,
+        ]);
+        setStrings((prevState) => [
+          ...prevState,
+          actualData[Math.floor(Math.random() * 100)].text,
+        ]);
+      });
+  }, []);
+
   return (
     <div className={`section ${HomeStyles.homeBackground}`}>
       <Row align="middle" justify="center">
@@ -30,11 +53,7 @@ const HomePage = () => {
           </h1>
           <TypewriterComponent
             options={{
-              strings: [
-                "Full Stack Developer",
-                "I like programming",
-                "I love learning",
-              ],
+              strings,
               autoStart: true,
               loop: true,
               deleteSpeed: 10,
@@ -42,23 +61,27 @@ const HomePage = () => {
               cursorClassName: HomeStyles.homeSubtitle,
             }}
           />
-          <div>
-            <LinkedinFilled
-              className={HomeStyles.socialIcons}
-              onClick={() =>
-                window.open(
-                  "https://www.linkedin.com/in/dramirezs95/?locale=en_US"
-                )
-              }
-            />
-            <GithubOutlined
-              className={HomeStyles.socialIcons}
-              onClick={() => window.open("https://github.com/danielrs95")}
-            />
+          <div style={{ zIndex: 1 }}>
+            <Tooltip title="Check my LinkedIn" placement="bottom">
+              <LinkedinFilled
+                className={HomeStyles.socialIcons}
+                onClick={() =>
+                  window.open(
+                    "https://www.linkedin.com/in/dramirezs95/?locale=en_US"
+                  )
+                }
+              />
+            </Tooltip>
+            <Tooltip title="Check my Github" placement="bottom">
+              <GithubOutlined
+                className={HomeStyles.socialIcons}
+                onClick={() => window.open("https://github.com/danielrs95")}
+              />
+            </Tooltip>
           </div>
         </Col>
       </Row>
-      <LandingParticles id="1" />
+      <LandingParticles />
     </div>
   );
 };

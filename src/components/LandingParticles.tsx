@@ -2,14 +2,14 @@ import React, { useCallback } from "react";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 
-const LandingParticles = (id: any) => {
+const LandingParticles = () => {
   const particlesInit = useCallback(async (engine: any) => {
     await loadFull(engine);
   }, []);
 
   return (
     <Particles
-      id="tsparticles-1"
+      id="tsparticles"
       init={particlesInit}
       options={{
         fpsLimit: 120,
@@ -74,7 +74,7 @@ const LandingParticles = (id: any) => {
             type: ["circle"],
           },
           size: {
-            value: { min: 2, max: 5 },
+            value: { min: 3, max: 5 },
           },
         },
         detectRetina: true,

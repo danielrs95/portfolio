@@ -4,6 +4,7 @@ import { Card, Col, List, Row, Typography } from "antd";
 import Meta from "antd/lib/card/Meta";
 import stylesSections from "../styles/Home.module.css";
 import projectsData from "../utils/Work";
+import AboutStyles from "../styles/About.module.css";
 
 const { Paragraph } = Typography;
 
@@ -25,13 +26,14 @@ const WorkPage = () => {
             renderItem={(item) => (
               <List.Item>
                 <Card
+                  hoverable
                   cover={
                     <img
                       width={300}
                       height={200}
                       alt={item.title}
                       src={item.img}
-                      style={{ objectFit: "contain" }}
+                      style={{ objectFit: "cover" }}
                     />
                   }
                   actions={[
