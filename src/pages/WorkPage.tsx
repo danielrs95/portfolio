@@ -1,13 +1,13 @@
 import React from "react";
 import { Col, Row } from "antd";
-import stylesSections from "../styles/Home.module.css";
+import "../styles/Home.less";
 import projectsData from "../utils/Work";
 import CardExperience from "../components/CardExperience";
 import "../styles/HomePage.css";
 
 const WorkPage = () => {
   return (
-    <div className={`section ${stylesSections.homeBackground} work-background`}>
+    <div className="section homeBackground work-background">
       <Row
         align="middle"
         justify="center"

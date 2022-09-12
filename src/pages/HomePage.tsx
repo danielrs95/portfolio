@@ -2,7 +2,7 @@ import { Col, Row, Tooltip } from "antd";
 import React, { useEffect, useState } from "react";
 import TypewriterComponent from "typewriter-effect";
 import { GithubOutlined, LinkedinFilled } from "@ant-design/icons";
-import HomeStyles from "../styles/Home.module.css";
+import "../styles/Home.less";
 import LandingParticles from "../components/LandingParticles";
 
 const HomePage = () => {
@@ -31,7 +31,7 @@ const HomePage = () => {
   }, []);
 
   return (
-    <div className={`section ${HomeStyles.homeBackground}`}>
+    <div className="section homeBackground">
       <Row align="middle" justify="center">
         <Col
           xs={20}
@@ -41,13 +41,9 @@ const HomePage = () => {
             flexDirection: "column",
           }}
         >
-          <h1 className={HomeStyles.homeTitle}>
+          <h1 className="homeTitle">
             Hi! I'm Daniel Ramirez Salazar{" "}
-            <span
-              className={HomeStyles.waveEmoji}
-              role="img"
-              aria-label="waving hand"
-            >
+            <span className="waveEmoji" role="img" aria-label="waving hand">
               👋
             </span>
           </h1>
@@ -57,14 +53,14 @@ const HomePage = () => {
               autoStart: true,
               loop: true,
               deleteSpeed: 10,
-              wrapperClassName: HomeStyles.homeSubtitle,
-              cursorClassName: HomeStyles.homeSubtitle,
+              wrapperClassName: "homeSubtitle",
+              cursorClassName: "homeSubtitle",
             }}
           />
           <div style={{ zIndex: 1 }}>
             <Tooltip title="Check my LinkedIn" placement="bottom">
               <LinkedinFilled
-                className={HomeStyles.socialIcons}
+                className="socialIcons"
                 onClick={() =>
                   window.open(
                     "https://www.linkedin.com/in/dramirezs95/?locale=en_US"
@@ -74,7 +70,7 @@ const HomePage = () => {
             </Tooltip>
             <Tooltip title="Check my Github" placement="bottom">
               <GithubOutlined
-                className={HomeStyles.socialIcons}
+                className="socialIcons"
                 onClick={() => window.open("https://github.com/danielrs95")}
               />
             </Tooltip>

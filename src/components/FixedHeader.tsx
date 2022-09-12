@@ -64,7 +64,16 @@ const FixedHeader: React.FC = () => {
       trigger={null}
       collapsible
       collapsed={collapsed}
-      style={{ background: "white" }}
+      style={{
+        background: "white",
+        // overflow: "auto",
+        // height: "100vh",
+        // position: "fixed",
+        // left: 0,
+        // top: 0,
+        // bottom: 0,
+        // zIndex: 1,
+      }}
     >
       <div
         style={{
