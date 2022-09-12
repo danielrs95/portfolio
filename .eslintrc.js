@@ -41,6 +41,8 @@ module.exports = {
     "@typescript-eslint/no-explicit-any": "off",
     "react/function-component-definition": "off",
     "react/no-unescaped-entities": "off",
+    "react/prop-types": "off", // aparentemente es un error del parser, no tipea automáticamente
+    "react/require-default-props": "off",
   },
   settings: {
     react: {

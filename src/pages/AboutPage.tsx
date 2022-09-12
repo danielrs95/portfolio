@@ -17,24 +17,26 @@ const AboutSection = () => {
           <p className={AboutStyles.aboutText}>
             Constantly working with JavaScript, ReactJS, NodeJS and some Java
           </p>
-          <div style={{ display: "flex" }}>
-            <p
-              className={AboutStyles.aboutText}
-              style={{ paddingRight: "5px" }}
-            >
-              📣 Passionate about
-            </p>{" "}
-            <TypewriterComponent
-              options={{
-                strings: ["programming", "learning", "working out"],
-                autoStart: true,
-                loop: true,
-                wrapperClassName: AboutStyles.aboutText,
-                cursorClassName: AboutStyles.aboutText,
-              }}
-            />
+          <div>
+            <div style={{ display: "flex" }}>
+              <p
+                className={AboutStyles.aboutText}
+                style={{ paddingRight: "5px" }}
+              >
+                📣 Passionate about
+              </p>{" "}
+              <TypewriterComponent
+                options={{
+                  strings: ["programming", "learning", "working out"],
+                  autoStart: true,
+                  loop: true,
+                  wrapperClassName: AboutStyles.aboutText,
+                  cursorClassName: AboutStyles.aboutText,
+                }}
+              />
+            </div>
             <p className={AboutStyles.aboutText}>
-              . I am curious about tech in general, currently learning Rust &
+              I am curious about tech in general, currently learning Rust &
               Elixir
             </p>
           </div>

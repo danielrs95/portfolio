@@ -15,6 +15,7 @@ const data = [
     Admin interface for product, user & order management`,
     shortDescription:
       "E-Commerce application made with React, Redux, Node, Express & MondoDB",
+    techUsed: "React Redux Node Express MongoDB",
     img: im2,
     repo: "https://github.com/danielrs95/MERN_ECOMMERCE",
     webProject: "https://merncommercedny.herokuapp.com/",
@@ -23,6 +24,7 @@ const data = [
     title: "Notes",
     description: `Minimalist web notes app made with Nest as the main backend framework and React as the main frontend framework.`,
     shortDescription: "Minimalist web notes app made with Nest and React",
+    techUsed: "Nest React",
     img: im5,
     repo: "https://github.com/danielrs95/Notes_NestJS_React",
     webProject: "https://nest-note.herokuapp.com/",
@@ -33,6 +35,7 @@ const data = [
     shortDescription:
       "Movies application made with React, Node, Express & MondoDB.",
     img: im1,
+    techUsed: "Node Express MongoDB React",
     repo: "https://github.com/danielrs95/togetheater",
     webProject: "https://togetheater.herokuapp.com/",
   },
@@ -41,13 +44,16 @@ const data = [
     description: `Basic but powerful single page app made with React and Redux, with shopping cart functionality and persistent `,
     shortDescription:
       "Basic E-Commerce Single Page App made with React & Redux",
+    techUsed: "React Redux",
     img: im3,
     repo: "https://github.com/danielrs95/SPA_ECommerce",
+    webProject: undefined,
   },
   {
     title: "Polls",
     description: `Polls application made with Express & MongoDB, to make basic polls, no registration needed for vote`,
     shortDescription: "Polls application made with Express & MongoDB",
+    techUsed: "Node Express MongoDB",
     img: im4,
     repo: "https://github.com/danielrs95/Magic_Polls",
     webProject: "https://magicpolls.herokuapp.com/",

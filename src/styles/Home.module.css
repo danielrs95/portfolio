@@ -1,17 +1,18 @@
 .homeBackground {
   background-color: #005A8D;
   height: 100vh;
+  padding: 0 1rem;
 }
 
 .homeTitle {
-  font-size: 2.8rem;
+  font-size: 2rem;
   color: aliceblue;
   font-weight: 900;
   z-index: 1;
 }
 
 .homeSubtitle {
-  font-size: 1.8rem;
+  font-size: 1rem;
   color: aliceblue;
   font-weight: 600;
   z-index: 1;
