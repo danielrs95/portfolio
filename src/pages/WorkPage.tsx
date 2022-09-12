@@ -3,10 +3,11 @@ import { Col, Row } from "antd";
 import stylesSections from "../styles/Home.module.css";
 import projectsData from "../utils/Work";
 import CardExperience from "../components/CardExperience";
+import "../styles/HomePage.css";
 
 const WorkPage = () => {
   return (
-    <div className={`section ${stylesSections.homeBackground}`}>
+    <div className={`section ${stylesSections.homeBackground} work-background`}>
       <Row
         align="middle"
         justify="center"
